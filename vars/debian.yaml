@@ -4,6 +4,7 @@ packages:
   - bat
   - ctags
   - diff-so-fancy
+  - gawk
   - git
   - git-lfs
   - htop

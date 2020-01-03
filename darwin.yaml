@@ -12,3 +12,17 @@
     domain: com.apple.screencapture
     key: location
     value: ~/Pictures/Screenshots
+
+- name: enable safari develop menu
+  osx_defaults:
+    domain: com.apple.safari
+    key: IncludeDevelopMenu
+    type: bool
+    value: true
+
+- name: stop asking to use disks for time machine
+  osx_defaults:
+    domain: com.apple.TimeMachine
+    key: DoNotOfferNewDisksForBackup
+    type: bool
+    value: true

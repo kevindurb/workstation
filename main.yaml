@@ -1,6 +1,5 @@
 ---
 - hosts: localhost
-  remote_user: kevindurb
 
   vars_files:
     - "./vars/main.yaml"
@@ -8,3 +7,30 @@
   tasks:
     - include_vars: "{{ ansible_os_family|lower }}.yaml"
     - include_tasks: "./{{ ansible_os_family|lower }}.yaml"
+
+    - name: setup dotfiles
+      git:
+        repo: git@github.com:kevindurb/.dotfiles.git
+        dest: ~/.dotfiles
+
+    - name: update symlinks
+      command:
+        cmd: rcup
+        chdir: ~
+
+    - name: get zsh path
+      command: which zsh
+      register: zsh_path
+
+    - name: set shell to zsh
+      user:
+        name: "{{ ansible_user }}"
+        shell: "{{ zsh_path.stdout }}"
+
+    - name: install zplug
+      shell:
+        cmd: "curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh"
+        executable: "{{ zsh_path.stdout }}"
+        chdir: ~
+      args:
+        creates: ~/.zplug/init.zsh
