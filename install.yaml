@@ -6,5 +6,5 @@
     - name: setup pull job
       cron:
         name: 'pull workstation repo'
-        minute: '*/15'
+        minute: '*/30'
         job: '/usr/bin/ansible-pull -o -U https://github.com/kevindurb/workstation.git ./main.yaml'

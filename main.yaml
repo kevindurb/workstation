@@ -6,18 +6,5 @@
     - "./vars/main.yaml"
 
   tasks:
-    - import_role:
-        name: geerlingguy.docker
-      become: yes
-
-    - import_role:
-        name: geerlingguy.github-users
-      become: yes
-
-    - import_role:
-        name: geerlingguy.ntp
-      become: yes
-
-    - import_role:
-        name: geerlingguy.security
-      become: yes
+    - include_vars: "{{ ansible_os_family|lower }}.yaml"
+    - include_tasks: "./{{ ansible_os_family|lower }}.yaml"

@@ -1,0 +1,27 @@
+packages:
+  - ansible
+  - autojump
+  - bat
+  - ctags
+  - diff-so-fancy
+  - git
+  - git-lfs
+  - htop
+  - httpie
+  - hub
+  - neovim
+  - prettyping
+  - pv
+  - python
+  - rcm
+  - rename
+  - ripgrep
+  - ssh-copy-id
+  - starship
+  - tldr
+  - tmux
+  - watch
+  - wget
+  - yarn
+  - youtube-dl
+  - zsh

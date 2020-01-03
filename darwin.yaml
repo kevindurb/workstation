@@ -1,0 +1,14 @@
+---
+- import_role:
+    name: geerlingguy.homebrew
+
+- name: create screenshot directory
+  file:
+    path: ~/Pictures/Screenshots
+    state: directory
+
+- name: set the default screenshot directory
+  osx_defaults:
+    domain: com.apple.screencapture
+    key: location
+    value: ~/Pictures/Screenshots
