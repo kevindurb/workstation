@@ -1,0 +1,5 @@
+- src: geerlingguy.docker
+- src: geerlingguy.ntp
+- src: geerlingguy.security
+- src: geerlingguy.github-users
+- src: manala.cron

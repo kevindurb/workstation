@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  remote_user: kevindurb
+
+  vars_files:
+    - "./vars/main.yaml"
+
+  tasks:
+    - import_role:
+        name: geerlingguy.docker
+      become: yes
+
+    - import_role:
+        name: geerlingguy.github-users
+      become: yes
+
+    - import_role:
+        name: geerlingguy.ntp
+      become: yes
+
+    - import_role:
+        name: geerlingguy.security
+      become: yes
