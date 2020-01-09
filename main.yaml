@@ -23,9 +23,11 @@
       register: zsh_path
 
     - name: set shell to zsh
+      become: yes
       user:
         name: "{{ ansible_user }}"
         shell: "{{ zsh_path.stdout }}"
+        groups: docker
 
     - name: install zplug
       shell:

@@ -3,7 +3,6 @@ packages:
   - autojump
   - bat
   - ctags
-  - diff-so-fancy
   - gawk
   - git
   - git-lfs
@@ -11,14 +10,14 @@ packages:
   - httpie
   - hub
   - neovim
-  - prettyping
   - pv
   - python
   - rcm
   - rename
   - ripgrep
-  - ssh-copy-id
-  - starship
+  - neovim
+  - openssh-server
+  - xclip
   - tldr
   - tmux
   - watch

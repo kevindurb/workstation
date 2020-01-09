@@ -1,13 +1,15 @@
 ---
 - import_role:
-    name: geerlingguy.docker
-- import_role:
     name: geerlingguy.github-users
+  become: yes
 - import_role:
     name: geerlingguy.ntp
+  become: yes
 - import_role:
     name: geerlingguy.security
+  become: yes
 - name: install packages
+  become: yes
   package:
     name: "{{ item }}"
     state: present
