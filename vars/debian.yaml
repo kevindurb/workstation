@@ -10,18 +10,17 @@ packages:
   - httpie
   - hub
   - neovim
+  - openssh-server
   - pv
   - python
   - rcm
   - rename
   - ripgrep
-  - neovim
-  - openssh-server
-  - xclip
   - tldr
   - tmux
   - watch
   - wget
+  - xsel
   - yarn
   - youtube-dl
   - zsh
