@@ -1,4 +1,5 @@
 packages:
+  - alacritty
   - ansible
   - autojump
   - bat

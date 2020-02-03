@@ -37,6 +37,7 @@ homebrew_installed_packages:
   - youtube-dl
   - zsh
 homebrew_cask_apps:
+  - alacritty
   - discord
   - docker
   - dropbox
