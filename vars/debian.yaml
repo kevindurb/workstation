@@ -25,3 +25,5 @@ packages:
   - yarn
   - youtube-dl
   - zsh
+repositories:
+  - ppa:mmstick76/alacritty
