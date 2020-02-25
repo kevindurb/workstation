@@ -14,9 +14,9 @@ packages:
   - openssh-server
   - pv
   - python
-  - rcm
   - rename
   - ripgrep
+  - stow
   - tldr
   - tmux
   - watch

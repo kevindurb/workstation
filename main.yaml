@@ -13,10 +13,10 @@
         repo: git@github.com:kevindurb/.dotfiles.git
         dest: ~/.dotfiles
 
-    - name: update symlinks
-      command:
-        cmd: rcup
-        chdir: ~
+    - name: setup dotfiles
+      make:
+        target: install
+        chdir: ~/.dotfiles
 
     - name: get zsh path
       command: which zsh
@@ -29,10 +29,7 @@
         shell: "{{ zsh_path.stdout }}"
         groups: docker
 
-    - name: install zplug
-      shell:
-        cmd: "curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh"
-        executable: "{{ zsh_path.stdout }}"
-        chdir: ~
-      args:
-        creates: ~/.zplug/init.zsh
+    - name: install antigen
+      get_url:
+        url: http://git.io/antigen
+        dest: ~/antigen.zsh
