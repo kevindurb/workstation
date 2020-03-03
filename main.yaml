@@ -27,7 +27,6 @@
       user:
         name: "{{ ansible_user }}"
         shell: "{{ zsh_path.stdout }}"
-        groups: docker
 
     - name: install antigen
       get_url:

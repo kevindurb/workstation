@@ -4,6 +4,10 @@
   become: yes
 
 - import_role:
+    name: sansible.users_and_groups
+  become: yes
+
+- import_role:
     name: geerlingguy.ntp
   become: yes
 
@@ -23,3 +27,8 @@
 - import_role:
     name: geerlingguy.security
   become: yes
+
+- name: add kevindurb to docker group
+  user: kevindurb
+  groups: docker
+  append: yes
