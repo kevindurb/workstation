@@ -1,22 +1,4 @@
 ---
-- import_role:
-    name: geerlingguy.github-users
-  become: yes
-
-- import_role:
-    name: sansible.users_and_groups
-  become: yes
-
-- import_role:
-    name: geerlingguy.ntp
-  become: yes
-
-- name: add repos
-  become: yes
-  apt_repository:
-    repo: "{{ item }}"
-  loop: "{{ repositories }}"
-
 - name: install packages
   become: yes
   package:
@@ -24,6 +6,9 @@
     state: present
   loop: "{{ packages }}"
 
-- import_role:
-    name: geerlingguy.security
+- name: install snaps
   become: yes
+  snap:
+    name: "{{ name }}"
+    channel: "{{ channel }}"
+  loop: "{{ snaps }}"
