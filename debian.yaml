@@ -9,6 +9,7 @@
 - name: install snaps
   become: yes
   snap:
-    name: "{{ name }}"
-    channel: "{{ channel }}"
+    name: "{{ item.name }}"
+    channel: "{{ item.channel or 'stable' }}"
+    classic: "{{ item.classic or false }}"
   loop: "{{ snaps }}"

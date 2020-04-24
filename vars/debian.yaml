@@ -1,7 +1,7 @@
 packages:
   - ansible
   - autojump
-  - bat
+  # - bat
   - ctags
   - gawk
   - git
@@ -27,6 +27,7 @@ packages:
 snaps:
   - name: alacritty
     channel: latest/edge
+    classic: true
   - name: slack
   - name: simplenote
   - name: zoom-client
