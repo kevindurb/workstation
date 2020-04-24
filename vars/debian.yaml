@@ -37,3 +37,4 @@ snaps:
   - name: multipass
   - name: spotify
   - name: docker
+  - name: bitwarden
