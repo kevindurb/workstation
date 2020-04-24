@@ -10,6 +10,6 @@
   become: yes
   snap:
     name: "{{ item.name }}"
-    channel: "{{ item.channel or 'stable' }}"
-    classic: "{{ item.classic or false }}"
+    channel: "{{ item.channel }}"
+    classic: "{{ item.classic }}"
   loop: "{{ snaps }}"

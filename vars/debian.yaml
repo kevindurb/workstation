@@ -28,14 +28,43 @@ snaps:
   - name: alacritty
     channel: latest/edge
     classic: true
+
   - name: slack
+    channel: stable
+    classic: false
+
   - name: simplenote
+    channel: stable
+    classic: false
+
   - name: zoom-client
+    channel: stable
+    classic: false
+
   - name: rpi-imager
+    channel: stable
+    classic: false
+
   - name: firefox
     channel: latest/beta
+    classic: false
+
   - name: discord
+    channel: stable
+    classic: false
+
   - name: multipass
+    channel: stable
+    classic: false
+
   - name: spotify
+    channel: stable
+    classic: false
+
   - name: docker
+    channel: stable
+    classic: false
+
   - name: bitwarden
+    channel: stable
+    classic: false
