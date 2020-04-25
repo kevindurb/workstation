@@ -15,7 +15,7 @@
 
     - name: setup dotfiles
       make:
-        target: install
+        target: link
         chdir: ~/.dotfiles
 
     - name: get zsh path
