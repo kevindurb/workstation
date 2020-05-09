@@ -15,7 +15,7 @@
 
     - name: setup dotfiles
       make:
-        target: install
+        target: link
         chdir: ~/.dotfiles
 
     - name: get zsh path
@@ -27,3 +27,10 @@
       user:
         name: "{{ ansible_user }}"
         shell: "{{ zsh_path.stdout }}"
+
+    - name: Add user to docker group
+      become: yes
+      user:
+        name: "{{ ansible_user }}"
+        groups: docker
+        append: yes

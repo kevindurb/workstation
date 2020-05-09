@@ -3,6 +3,8 @@ packages:
   - autojump
   # - bat
   - ctags
+  - curl
+  - docker.io
   - gawk
   - git
   - git-lfs
