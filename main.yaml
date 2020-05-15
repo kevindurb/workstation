@@ -1,12 +1,26 @@
 ---
 - hosts: localhost
 
-  vars_files:
-    - "./vars/main.yaml"
+  vars:
+    npm_packages:
+      - neovim
+      - bash-language-server
+
+  roles:
+    - role: stephdewit.nvm
+      nvm_version: HEAD
+      nvm_node_version: stable
 
   tasks:
     - include_vars: "{{ ansible_os_family|lower }}.yaml"
     - include_tasks: "./{{ ansible_os_family|lower }}.yaml"
+
+    - name: install npm packages
+      npm:
+        name: "{{ item }}"
+        global: yes
+        state: present
+      loop: "{{ npm_packages }}"
 
     - name: setup dotfiles
       git:

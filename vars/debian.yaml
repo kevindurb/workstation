@@ -11,6 +11,7 @@ packages:
   - htop
   - httpie
   - hub
+  - jq
   - neovim
   - openssh-server
   - pv
