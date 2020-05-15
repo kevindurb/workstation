@@ -13,3 +13,8 @@
     channel: "{{ item.channel }}"
     classic: "{{ item.classic }}"
   loop: "{{ snaps }}"
+
+- name: Start Syncthing
+  systemd:
+    state: started
+    name: syncthing@kevindurb

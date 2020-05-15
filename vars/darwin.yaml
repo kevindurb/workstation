@@ -28,6 +28,7 @@ homebrew_installed_packages:
   - ripgrep
   - ssh-copy-id
   - starship
+  - syncthing
   - tldr
   - tmux
   - todoist

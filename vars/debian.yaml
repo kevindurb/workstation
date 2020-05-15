@@ -19,6 +19,7 @@ packages:
   - rename
   - ripgrep
   - stow
+  - syncthing
   - tldr
   - tmux
   - watch
