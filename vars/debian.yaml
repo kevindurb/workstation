@@ -5,6 +5,7 @@ packages:
   - ctags
   - curl
   - docker.io
+  - firefox
   - gawk
   - git
   - git-lfs
@@ -16,6 +17,7 @@ packages:
   - openssh-server
   - pv
   - python
+  - python3-pip
   - rename
   - ripgrep
   - stow
@@ -47,10 +49,6 @@ snaps:
 
   - name: rpi-imager
     channel: stable
-    classic: false
-
-  - name: firefox
-    channel: latest/beta
     classic: false
 
   - name: discord
