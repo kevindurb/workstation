@@ -13,6 +13,7 @@ packages:
   - httpie
   - hub
   - jq
+  - mosh
   - neovim
   - openssh-server
   - pv

@@ -19,6 +19,7 @@ homebrew_installed_packages:
   - htop
   - httpie
   - hub
+  - mosh
   - neovim
   - prettyping
   - pv
