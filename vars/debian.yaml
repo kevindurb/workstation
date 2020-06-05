@@ -72,3 +72,7 @@ snaps:
   - name: bitwarden
     channel: stable
     classic: false
+
+  - name: ffsend
+    channel: stable
+    classic: false
