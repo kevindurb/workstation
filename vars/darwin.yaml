@@ -14,11 +14,13 @@ homebrew_installed_packages:
   - bat
   - ctags
   - diff-so-fancy
+  - ffsend
   - git
   - git-lfs
   - htop
   - httpie
   - hub
+  - mosh
   - neovim
   - prettyping
   - pv
