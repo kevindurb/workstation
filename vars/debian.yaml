@@ -70,3 +70,7 @@ snaps:
   - name: bitwarden
     channel: stable
     classic: false
+
+  - name: vlc
+    channel: stable
+    classic: false
