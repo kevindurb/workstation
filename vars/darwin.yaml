@@ -41,19 +41,11 @@ homebrew_installed_packages:
   - zsh
 homebrew_cask_apps:
   - alacritty
-  - discord
   - docker
   - dropbox
-  - fantastical
   - firefox
-  - iterm2
   - multipass
-  - signal
   - simplenote
-  - slack
-  - soundflower
-  - spectacle
+  # - slack
   - spotify
-  - steam
-  - telegram
   - virtualbox

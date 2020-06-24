@@ -18,3 +18,10 @@
   systemd:
     state: started
     name: syncthing@kevindurb
+
+- name: Add user to docker group
+  become: yes
+  user:
+    name: "{{ ansible_user }}"
+    groups: docker
+    append: yes
