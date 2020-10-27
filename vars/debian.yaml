@@ -2,7 +2,7 @@ packages:
   - ansible
   - autojump
   # - bat
-  - ctags
+  # - ctags
   - curl
   - docker.io
   - firefox
@@ -15,6 +15,8 @@ packages:
   - jq
   - mosh
   - neovim
+  - nodejs
+  - npm
   - openssh-server
   - pv
   - python
@@ -32,10 +34,6 @@ packages:
   - youtube-dl
   - zsh
 snaps:
-  - name: alacritty
-    channel: latest/edge
-    classic: true
-
   - name: slack
     channel: stable
     classic: true
@@ -73,9 +71,5 @@ snaps:
     classic: false
 
   - name: vlc
-    channel: stable
-    classic: false
-
-  - name: ffsend
     channel: stable
     classic: false

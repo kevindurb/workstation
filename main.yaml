@@ -13,6 +13,7 @@
     - include_tasks: "./{{ ansible_os_family|lower }}.yaml"
 
     - name: install npm packages
+      become: yes
       npm:
         name: "{{ item }}"
         global: yes
