@@ -5,6 +5,8 @@
     npm_packages:
       - neovim
       - bash-language-server
+      - dockerfile-language-server-nodejs
+      - sql-language-server
 
   roles:
 
