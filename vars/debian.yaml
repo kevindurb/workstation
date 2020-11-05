@@ -1,12 +1,11 @@
 packages:
   - ansible
   - autojump
-  # - bat
-  # - ctags
   - curl
   - docker.io
   - firefox
   - gawk
+  - gh
   - git
   - git-lfs
   - htop
@@ -59,10 +58,6 @@ snaps:
     classic: true
 
   - name: spotify
-    channel: stable
-    classic: false
-
-  - name: docker
     channel: stable
     classic: false
 

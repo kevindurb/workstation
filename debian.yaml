@@ -1,4 +1,13 @@
 ---
+- name: install gh cli apt key
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: C99B11DEB97541F0
+
+- name: install gh cli apt repo
+  apt_repository:
+    repo: https://cli.github.com/packages
+
 - name: install packages
   become: yes
   package:

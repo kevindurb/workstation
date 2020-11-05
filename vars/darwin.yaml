@@ -15,6 +15,7 @@ homebrew_installed_packages:
   - ctags
   - diff-so-fancy
   - ffsend
+  - gh
   - git
   - git-lfs
   - htop
